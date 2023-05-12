@@ -1,0 +1,80 @@
+/* It wasn't clear to me, from the limited instructions, whether the alighment of the 
+text was always supposed to be the same regardless of screen width, so I am usingg 
+absolute pixel widths instead of relative widths. Tried to make it all look as close
+to the example as I could. */
+
+:root {
+    --sans-serif-font: Lato, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fba4cb;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--sans-serif-font);
+}
+
+h1:hover {
+    color: black;
+}
+
+p {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+}
+
+ol {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    color: black;
+    font-weight: bold;
+    font-family: var(--sans-serif-font);
+    font-size: .75em;
+    line-height: 2em;
+}
+
+img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    margin: 1em 1em;
+}
+
+.quote-1 {
+    font-size: .75em;
+    line-height: 1.5em;
+}
+
+.credit-1 {
+    font-family: var(--sans-serif-font);
+    font-weight: bold;
+    line-height: 3em;
+}
+
+.quote-2 {
+    font-size: 2em;
+    line-height: 1.25em;
+    width: 280px;
+}
+
+.credit-2 {
+    font-family: var(--sans-serif-font);
+    font-size: .75em;
+    color: black;
+    width: 275px;
+}
+
+/*
+* {
+    border: 2px solid blue;
+}
+*/
