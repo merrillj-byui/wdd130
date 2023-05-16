@@ -1,15 +1,21 @@
 
-  nav, footer {
+  body {
+    margin: 0;
+  }
+  
+  nav {
     background-color: steelblue;
     padding: 10px;
     color: white;
     text-align: center;
+    padding: 25px;
   }
 
   a {
     color: white;
     margin: 40px;
     font-size: 1.5em;
+    padding: 25px;
   }
 
   a:hover {
@@ -20,6 +26,7 @@
   h1 {
     color: steelblue;
     text-align: center;
+    margin: 50px 0;
   }
 
   img {
@@ -38,14 +45,15 @@
   footer p {
     font-size: 20px;
     margin: 20px auto;
+    padding: 25px
   }
-/*
+
   footer {
     background-color: steelblue;
     color: white;
     text-align: center;
   }
-*/
+
   .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
