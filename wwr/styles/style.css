@@ -29,6 +29,19 @@ body {
     padding: 0;
 }
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--nav-background-color);
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     color: var(--nav-link-color);
@@ -41,35 +54,13 @@ nav a:hover {
     color: var(--nav-hover-link-color);
 }
 
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
+#hero-image {
+    width: 100%
 }
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     font-family: var(--heading-font);
-}
-
-.button-box {
-    text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
-main section img {
-    box-sizing: border-box;
-}
-
-#background {
-    height: 725px;
-    background-color: var(--paragraph-background-color);
-}
-
-header {
-    background-color: var(--nav-background-color);
 }
 
 .home-title {
@@ -78,9 +69,8 @@ header {
     margin-top: 10px;
 }
 
-h4 {
-    color: var(--headline-color-on-white);
-    font-family: var(--heading-font);
+.button-box {
+    text-align: center;
 }
 
 .book, .join {
@@ -97,6 +87,38 @@ h4 {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
     font-size: 18px;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.card-image {
+    border: 10px solid var(--nav-hover-background-color);
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#background {
+    height: 725px;
+    background-color: var(--paragraph-background-color);
+    line-height: 1.5em;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
 }
 
 .msg {
@@ -141,34 +163,17 @@ footer p a:hover {
 }
 
 footer .social img {
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 .logo {
     width: 80px;
 }
 
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
-
-#hero-image {
-    width: 100%
-}
-
-h2 {
-    margin: 0;
-}
-
-#logo_link {
-    padding-top: 5px;
-}
-
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
 
-.card-image {
-    border: 10px solid var(--nav-hover-background-color);
+.mountains {
+    margin: 100px;
 }
