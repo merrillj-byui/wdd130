@@ -250,6 +250,7 @@ footer p a:hover {
 footer .social img {
     padding-top: 20px;
 }
+
 /* Rivers Page */
 
 #rivers-box {
@@ -324,11 +325,11 @@ footer .social img {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-card {
         display: block;
         height: auto;
     }
-    nav, footer {
+    nav, footer, .rivers-card {
         flex-direction: column;
     }
     nav a {
