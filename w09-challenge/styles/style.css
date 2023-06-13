@@ -60,17 +60,21 @@ footer,p {
     text-align: center;
 }
 
+sup {
+    font-size: 14px;
+}
+
 .footer_div_2 {
     color: white;
     grid-column: 2/3;
     width: 100px;
     height: 100px;
     text-align: center;
-    border-left-width: 2px;
-    border-right-width: 2px;
     border-color: gray;
     border-left-style: solid;
     border-right-style: solid;
+    border-left-width: 2px;
+    border-right-width: 2px;
 }
 
 .footer_div_3 {
@@ -82,7 +86,6 @@ footer,p {
 }
 
 .footer_emphasis {
-    margin-top: 1em;
+    margin-top: 24px;
     font-size: 24px;
-    text-emphasis: bold;
 }
