@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <title>Contact Us</title>
 </head>
 <body>
 
@@ -12,23 +13,63 @@
         <img id="logo" src="images/gettingout-logo.png" alt="Getting Out logo">
         <h1>Sitka Adventure</h1>
         <nav>
-            <a href="index.html">Sitka</a>
+            <a class="active" href="index.html">Sitka</a>
             <a href="preservation.html">Preservation</a>
             <a href="exploration.html">Exploration</a>
         </nav>
+        <p></p>
     </header>
 
     <main>
-        <h2>Contact Us</h2>
+        <div id="feedback"></div>
+        <form action="contact_form_handler" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"> 
+                </li>
+                <li>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" />
+                </li>
+                <li class="message_box">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </li>
+                <li class="submit">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
     </main>
 
     <footer>
-        <a href="site-plan.html">Site Plan</a>
-        <a href="our_story.html">Our Story</a>
-        <a href="contact_us.html">Contact Us</a>
-        <a href="planning.html">Planning</a>
-        <a href="references.html">References</a>
-        <a href="resources.html">Resources</a>
+        <ul>
+            <li>
+                <a href="site-plan.html">Site Plan</a>
+            </li>
+            <li>
+                <a href="our_story.html">Our Story</a>
+            </li>
+            <li>
+                <a href="contact_us.html">Contact Us</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="planning.html">Planning</a>
+            </li>
+            <li>
+                <a href="references.html">References</a>
+            </li>
+            <li>
+                <a href="resources.html">Resources</a>
+            </li>
+        </ul>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
@@ -40,7 +81,28 @@
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </div>
-</footer>
+        <p id="copyright">&copy; 2023 by Getting Out and Go</p>
+
+    </footer>
+    
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.name.value +'! Thank you for your message. We will get back with you at ' + formElement.email.value + ' as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>    
 
 </body>
 </html>
+
