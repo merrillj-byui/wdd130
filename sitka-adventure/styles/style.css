@@ -31,7 +31,7 @@ header {
 }
 h1 {
     font-family: Garamond;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     color: white;
     grid-row: 1;
@@ -308,6 +308,9 @@ footer .social img {
     }
     section {
         display: flex;
+    }
+    img {
+        object-fit: scale-down;
     }
     footer {
         display: flex;
