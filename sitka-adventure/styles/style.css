@@ -95,7 +95,7 @@ h2 {
     float: left;
 }
 .right img {
-    margin-left: 20px;
+    margin-left: 5%;
 }
 .right img:nth-of-type(1) {
     width: 40%;
@@ -117,7 +117,7 @@ h2 {
     float: right;
 }
 .left img {
-    margin-right: 20px;
+    margin-right: 5%;
 }
 .left img:nth-of-type(1) {
     width: 40%;
@@ -233,7 +233,7 @@ footer {
     color: white;
     margin-top: 20px;
     display: grid;
-    grid-template: 2fr 1fr / 150px 150px 1fr 200px;
+    grid-template: 2fr 1fr / 25% 25% 1fr 30%;
 }
 footer ul:nth-of-type(1) {
     grid-area: 1 / 1;
@@ -288,7 +288,7 @@ footer .social img {
         margin: 0;    
         margin-bottom: 20px;
     }
-    nav, footer, main {
+    nav, footer {
         flex-direction: column;
         margin-top: 20px;
     }
