@@ -73,18 +73,22 @@ section {
 }
 section img {
     border-radius: 1em;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .center {
-    width: 75%;
+    width: 100%;
     text-align: center;
-    margin: auto 125px;
+}
+.center p {
+    margin: 0 10%;
+    text-align: center;
 }
 h2 {
     font-family: Garamond;
     color: #3E8CCF;
+    text-align: center;
 }
-.right h2 {
+.right-h2 {
     text-align: right;
 }
 .right p {
@@ -106,7 +110,7 @@ h2 {
     width: 40%;
     float: right;
 }
-.left h2 {
+.left-h2 {
     text-align: left;
 }
 .left p {
