@@ -72,7 +72,6 @@ section {
 }
 section img {
     border-radius: 1em;
-    margin: 10px auto;
 }
 .center {
     width: 100%;
@@ -308,9 +307,6 @@ footer .social img {
     }
     section {
         display: flex;
-    }
-    img {
-        object-fit: scale-down;
     }
     footer {
         display: flex;
