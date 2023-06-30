@@ -1,0 +1,319 @@
+body {
+    background-color: white;
+    font-family: verdana;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header CSS */
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template: 25px 150px 1em / 25px 150px 1fr;
+    margin: 0;
+}
+#banner {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+#logo {
+    width: 175px;
+    height: 175px;
+    border-radius: 1em;
+    grid-row: 2;
+    grid-column: 2;
+}
+h1 {
+    font-family: Garamond;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    grid-row: 1;
+    grid-column: 3 / 4;
+    margin: 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 3;
+    grid-column: 3;
+}
+header nav a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+header nav a:hover {
+    color: #41A1B8;
+    /*font-weight: bold;*/
+    text-decoration: underline;
+}
+header nav .active {
+    font-size: 1.5em;
+    color: #3E8CCF;
+    font-weight: bold;
+}
+
+/* Main CSS */
+
+main{
+    width: 90%;
+    margin: 5% auto;
+}
+section {
+    display: inline-block;
+    margin: 20px auto;
+}
+p {
+    width: 100%
+}
+img {
+    border-radius: 1em;
+    width: 35%;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: Garamond;
+    color: #3E8CCF;
+}
+.center {
+    text-align: center;
+}
+.center p {
+    margin: 0 10%;
+    width: 75%;
+}
+.right {
+    text-align: left;
+}
+/*.right h2 {
+    text-align: right;
+}*/
+.right p {
+    width: 55%
+    float: left;
+}
+.right img:nth-of-type(1), .right img:nth-of-type(3) {
+    margin-left: 5%;
+    float: right;
+}
+.right img:nth-of-type(2), .right img:nth-of-type(4) {
+    margin-right: 5%;
+    float: left;
+}
+.left {
+    text-align: right;
+}
+/*.left h2 {
+    text-align: left;
+}*/
+.left p {
+    width: 55%
+    float: right;
+}
+.left img:nth-of-type(1), .left img:nth-of-type(3) {
+    margin-right: 5%;
+    float: left;
+}
+.left img:nth-of-type(2), .left img:nth-of-type(4) {
+    margin-right: 5%;
+    float: right;
+}
+.center-3 {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr
+}
+.center-3 img:nth-of-type(1){
+    grid-column: 1;
+    grid-row: 1;
+    width: 90%;
+    margin-right: 10%;
+}
+.center-3 p {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+.center-3 img:nth-of-type(2){
+    grid-column: 3;
+    grid-row: 1;
+    width: 90%;
+    margin-left: 10%;
+}
+.slides img {
+    width: 28%;
+    border-radius: 1em;
+    margin: 2%;
+}
+
+/* contacts page styles */
+
+form {
+    /* Center the form on the page */
+    margin: 20px auto;
+    width: 410px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+}
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 100px; /* same size as the label elements */
+}
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 105px;
+    font-size: .75em;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+/* Footer CSS */
+
+footer {
+    width: 100%;
+    background-color: #6F736D;
+    color: white;
+    margin-top: 20px;
+    display: grid;
+    grid-template: 2fr 1fr / 25% 25% 1fr 30%;
+}
+footer ul:nth-of-type(1) {
+    grid-area: 1 / 1;
+    list-style-type: none;
+}
+footer li {
+    margin: .75em auto;
+}
+footer ul:nth-of-type(2) {
+    grid-area: 1 / 2;
+    list-style-type: none;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #3ECFC5;
+    text-decoration: underline;
+}
+footer p {
+    font-size: 1.2em;
+    text-align: left;
+}
+footer div {
+    grid-column-start: 4;
+    text-align: center;
+}
+footer .social img {
+    padding-top: 20px;
+    width: 40px;
+}
+#copyright {
+    grid-row: 2;
+    grid-column: 1 / 5;
+    text-align: center;
+    color: lightgrey;
+    margin: 1em;
+}
+
+/* Media CSS */
+
+@media screen and (max-width: 700px) {
+    #banner, main, main section {
+        display: inline-block;
+        height: auto;
+    }
+    #banner {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin: 0;    
+        margin-bottom: 20px;
+    }
+    nav, footer {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    nav a, nav .active, nav a:hover {
+        display: block;
+        font-size: 1em;
+        margin: 5px;
+    }
+    main {
+        margin-top: 50px;
+        width: 94%;
+        padding: 3%;
+    }
+    .center {
+        width: 100%;
+        margin: 0 auto;
+    }
+    section {
+        display: flex;
+    }
+    footer {
+        display: flex;
+        margin-top: 25px;
+    }
+}
+
