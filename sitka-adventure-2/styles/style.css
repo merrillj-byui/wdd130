@@ -14,7 +14,7 @@ header {
     grid-template: 25px 150px 1em / 25px 150px 1fr;
     margin: 0;
 }
-#banner {
+#banner{
     width: 100%;
     height: 160px;
     border-radius: 0;
