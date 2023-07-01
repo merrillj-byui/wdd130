@@ -37,7 +37,7 @@ h1 {
     text-align: center;
     color: white;
     grid-row: 1;
-    grid-column: 2 / 4;
+    grid-column: 1 / 4;
     margin: 0;
     z-index: 2;
     text-shadow: 2px 2px #6F736D;
