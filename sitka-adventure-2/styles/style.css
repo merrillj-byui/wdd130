@@ -35,7 +35,7 @@ h1 {
     text-align: center;
     color: white;
     grid-row: 1;
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
     margin: 0;
 }
 header nav {
@@ -279,8 +279,9 @@ footer div {
     text-align: center;
 }
 footer .social img {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     width: 40px;
+    border-radius: 5px;
 }
 #copyright {
     grid-row: 2;
