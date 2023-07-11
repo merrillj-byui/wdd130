@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
     <link type="text/css" rel="stylesheet" href="styles/style.css">
     <title>Exploration</title>
 </head>
@@ -21,8 +22,8 @@
     </header>
 
     <main>
-        <section class="center-left">
-            <h2>The City of Sitka Alaska</h2>
+        <section>
+            <h2 class="center">The City of Sitka Alaska</h2>
             <p>
                 The population of Sitka was 8,458 people according to the 2020 census, which makes it the fifth most populated city in Alaska. The total area (including water) is 4,811 square miles, making Sitka the largest city in the U.S. by total area. However, the developed land area is small.
             </p>
@@ -39,49 +40,91 @@
                 (<a href="https://www.cityofsitka.com/about-sitka">More information</a>)
             </p>
         </section>
-        <section class="center-3">
-            <h2>Totem Park</h2>
-            <img src="images/totem_park_visitor_center.JPG" alt="Totem Park Visitors Center">
-            <img src="images/totem_pole.JPG" alt="Totem Pole">
-            <p>
-                No visit to Sitka can be complete without visiting Sitka National Historic Park/Totem Park. The park consists of walking trails through a natural rain forest with totem poles featured at various points along the trails. The visitor center provides views of historic totem poles and pole fragments. An educational film is also available to view. 
-            </p>
-            <p>
-                (<a href="https://www.nps.gov/sitk/learn/historyculture/totem-park.htm">More information</a>)
-            </p>
+        <section>
+            <h2 class="center">Totem Park</h2>
+            <div class="center-3">
+                <p>
+                    No visit to Sitka can be complete without visiting Sitka National Historic Park/Totem Park. The park consists of walking trails through a natural rain forest with totem poles featured at various points along the trails. The visitor center provides views of historic totem poles and pole fragments. An educational film is also available to view. 
+                    (<a href="https://www.nps.gov/sitk/learn/historyculture/totem-park.htm">More information</a>)
+                </p>
+                <img src="images/totem_park_visitor_center.JPG" alt="Totem Park Visitors Center">
+                <img src="images/totem_pole.JPG" alt="Totem Pole">
+            </div>
         </section>
         <section>
-            <h2>Camping</h2>
-            <p>
-                There are opportunities for camping around Sitka. North if Sitka, near the north end of Halibut Point Road, is the Old Sitka State Park and Starrgavin campground at Starrgavin Bay. To the south, at the end of Sawmill Creek Road is the Sawmill Creek campground. 
-            </p>
-            <p>
-                (<a href="https://visitsitka.org/where-to-stay/camping-rv-parks">More information</a>)
-            </p>
-        </section>    
-        <section>
-            <h2>Canoeing and Kayaking</h2>
-            <p>
-                The beautiful Blue Lake is a reservoir located 3 miles to the east of Sitka. The end of Blue Lake Road accesses the reservoir, which can be used for canoeing and kayaking. Besides the majestic Blue Lake, various excursion companies offer kayaking adventures around Sitka Sound. 
-            </p>
-            <p>
-                (<a href="https://www.tripadvisor.com/Attractions-g60966-Activities-c61-t191-Sitka_Alaska.html">More information</a>)
-            </p>
+            <h2 class="center">Fair Weather Activities</h2>
+            <section>
+                <h3>Camping</h3>
+                <p>
+                    There are opportunities for camping around Sitka. North if Sitka, near the north end of Halibut Point Road, is the Old Sitka State Park and Starrgavin campground at Starrgavin Bay. To the south, at the end of Sawmill Creek Road is the Sawmill Creek campground. 
+                </p>
+                <p>
+                    (<a href="https://visitsitka.org/where-to-stay/camping-rv-parks">More information</a>)
+                </p>
+            </section>    
+            <section>
+                <h3>Canoeing and Kayaking</h3>
+                <p>
+                    The beautiful Blue Lake is a reservoir located 3 miles to the east of Sitka. The end of Blue Lake Road accesses the reservoir, which can be used for canoeing and kayaking. Besides the majestic Blue Lake, various excursion companies offer kayaking adventures around Sitka Sound. 
+                </p>
+                <p>
+                    (<a href="https://www.tripadvisor.com/Attractions-g60966-Activities-c61-t191-Sitka_Alaska.html">More information</a>)
+                </p>
+            </section>
+            <section>
+                <h3>Hiking</h3>
+                <p>
+                    Mount Verstovia and Harbor Mountain hiking trails provide commanding overlooks, as well as an array of vegetation. It is highly recommended to wear bear bells and carry bear spray whenever hiking around Sitka. 
+                </p>
+                <p>
+                    (<a href="https://www.alaska.org/destination/sitka/parks-and-trails">More information</a>)
+                </p>
+            </section>
+            <!--
+            <div class="slides">
+                <img src="images/blue_lake.JPG" alt="Blue Lake">
+                <img src="images/harbor_mountain_overlook.JPG" alt="An overlook from Harbor Mountain">
+                <img src="images/harbor_mountain_hike.JPG" alt="Hiking on Harbor Mountain">
+            </div>
+            -->
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/blue_lake.JPG" alt="Blue Lake" style="width:100%">
+                <div class="text">Blue Lake</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/harbor_mountain_overlook.JPG" alt="Harbor Mountain Overlook" style="width:100%">
+                <div class="text">Harbor Mountain Overlook</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/harbor_mountain_hike.JPG" alt="Harbor Mountain Hike" style="width:100%">
+                <div class="text">Hiking Harbor Mountain</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
         </section>
-        <section>
-            <h2>Hiking</h2>
-            <p>
-                Mount Verstovia and Harbor Mountain hiking trails provide commanding overlooks, as well as an array of vegetation. It is highly recommended to wear bear bells and carry bear spray whenever hiking around Sitka. 
-            </p>
-            <p>
-                (<a href="https://www.alaska.org/destination/sitka/parks-and-trails">More information</a>)
-            </p>
-        </section>
-        <div class="slides">
-            <img src="images/blue_lake.JPG" alt="Blue Lake">
-            <img src="images/harbor_mountain_overlook.JPG" alt="An overlook from Harbor Mountain">
-            <img src="images/harbor_mountain_hike.JPG" alt="Hiking on Harbor Mountain">
-        </div>
     </main>
 
     <footer>
@@ -121,6 +164,37 @@
         <p id="copyright">&copy; 2023 by Getting Out and Go</p>
 
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
 
 </body>
 </html>
