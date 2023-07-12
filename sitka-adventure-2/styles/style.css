@@ -41,7 +41,6 @@ h1 {
     margin: 0;
     z-index: 2;
     text-shadow: 2px 2px #6F736D;
-
 }
 header nav {
     display: flex;
@@ -61,7 +60,6 @@ header nav a:hover {
 header nav .active {
     font-size: 1.5em;
     color: #3E8CCF;
-    background-color: white;
     font-weight: bold;
 }
 
