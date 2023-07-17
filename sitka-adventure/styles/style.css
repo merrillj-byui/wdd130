@@ -48,7 +48,7 @@ header nav {
     justify-content: space-around;
     grid-row: 3;
     grid-column: 3;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 header nav a {
     text-align: center;
