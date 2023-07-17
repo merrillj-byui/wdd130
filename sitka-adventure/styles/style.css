@@ -60,7 +60,7 @@ header nav a:hover {
     text-decoration: underline;
 }
 header nav .active {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #3E8CCF;
     background-color: white;
     font-weight: bold;
