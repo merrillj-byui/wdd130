@@ -64,6 +64,7 @@ header nav .active {
     color: #3E8CCF;
     background-color: white;
     font-weight: bold;
+    margin-top: -.2em;
 }
 
 /* Main CSS */
